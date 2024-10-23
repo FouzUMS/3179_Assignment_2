@@ -1,0 +1,59 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Heatmap showing major crimes against age groups",
+    "title": {
+      "text": "Relationship Between Age and Imprisonment in Australia",
+      "fontSize": 13,
+      "dy": -10
+    },
+    "height": 400,
+    "width": 500,
+    "data": {"url": "https://raw.githubusercontent.com/FouzUMS/FIT3179/refs/heads/main/Assignment_2/data/age_majorcrime_unp.csv"},
+    "mark": {"type": "rect", "tooltip": true},
+    "selection": {
+      "highlight": {"type": "single", "empty": "none", "on": "mouseover"}
+    },
+    "encoding": {
+      "y": {
+        "field": "Crime",
+        "type": "ordinal",
+        "title": "Type of Crime",
+        "axis": {
+          "labelAngle": 0}
+      },
+      "x": {
+        "field": "Age_group", 
+        "type": "ordinal", 
+        "title": "Age Group",  
+        "axis": {
+          "labelAngle": 15}
+      },
+      "color": {
+        "field": "Acts",
+        "type": "quantitative",
+        "title": "Crime Occurance (no.)",
+        "scale": {"scheme": "oranges"},
+        "condition": {"selection": "highlight", "value": "green"}
+      },
+      "opacity": {
+        "condition": {"selection": "highlight", "value": 1},
+        "value": 1
+      },
+      "tooltip": [
+        {
+          "field": "Crime",
+          "type": "ordinal",
+          "title": "Crime"
+        },
+        {
+          "field": "Age_group", 
+          "type": "ordinal", 
+          "title": "Age Group"},
+        {
+          "field": "Acts",
+          "type": "quantitative",
+          "title": "Occurances"
+        }
+      ]
+    }
+  }
