@@ -41,7 +41,19 @@
           </div>
         </div>
 
-
+        <body>
+          <div class="pure-u-1-2">
+              <div class="description description-left">
+                <h2>Population of prisoners in different states</h2>
+                <p>The first column contains text and the second column contains a visualisation.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. </p>
+              </div>
+            </div>
+            <div class="pure-u-1-2">
+              <div id="vis2" class="vis-container"></div>
+            </div>
+          </div>
 
         <div id="" class="pure-g">
             <div class="pure-u-1-1 small-font">
@@ -65,10 +77,18 @@
 </html>
 
 <script>
-var viz1 ="./js/Prison_pop_map.vg.json";
-
-vegaEmbed('#vis1', viz1)
-vegaEmbed('#vis2', viz2)
-vegaEmbed('#vis3', viz3)
-vegaEmbed('#vis4', viz4)
-</script>
+  var viz1 ="./js/Prison_pop_map.vg.json";
+  var viz2 ="./js/Age_majorcrime.json"
+  
+  vegaEmbed('#vis1', viz1).then(function(result) {
+  }).catch(console.error);
+  
+  vegaEmbed('#vis2', viz2).then(function(result) {
+  }).catch(console.error);
+  
+  vegaEmbed('#vis3', viz3).then(function(result) {
+  }).catch(console.error);
+  
+  vegaEmbed('#vis4', viz4).then(function(result) {
+  }).catch(console.error);
+  </script>
