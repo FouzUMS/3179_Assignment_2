@@ -1,11 +1,11 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.1.0.json",
-    "width": 500,
+    "width": 800,
     "height": 300,
     "title": {
       "text": "Average Sentence Per State",
       "dx": -160,
-      "align": "left"
+      "align": "center"
     },
     "data": {
       "url": "https://raw.githubusercontent.com/FouzUMS/3179_Assignment_2/refs/heads/main/data/states_sentences.csv",
