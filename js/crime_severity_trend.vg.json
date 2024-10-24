@@ -1,0 +1,40 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 600,
+    "height": 400,
+    "title": "",
+    "data": {
+      "url": "https://raw.githubusercontent.com/FouzUMS/3179_Assignment_2/refs/heads/main/data/crime_years_proportion_unp.csv",
+      "format": {"type": "csv"}
+    },
+    "mark": {
+      "type": "area",
+      "line": {"color": "darkblue"},
+      "point": true
+    },
+    "encoding": {
+      "x": {
+        "field": "Attribute",
+        "type": "temporal",
+        "title": "Year",
+        "axis": {"format": "%Y"}
+      },
+      "y": {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Crime Types"
+      },
+      "color": {
+        "field": "Most Serious",
+        "type": "nominal",
+        "title": "Crime Type",
+        "legend": {"orient": "right"}
+      },
+      "tooltip": [
+        {"field": "Most Serious", "type": "nominal", "title": "Crime"},
+        {"field": "Value", "type": "quantitative", "title": "Proportion out of total crimes"},
+        {"field": "Attribute", "type": "temporal", "title": "Year", "format": "%Y"}
+      ]
+    }
+  }
+  

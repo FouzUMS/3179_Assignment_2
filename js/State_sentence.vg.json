@@ -3,7 +3,7 @@
     "width": "container",
     "height": 300,
     "title": {
-      "text": "Average Sentence Per State",
+      "text": "",
       "dx": -160,
       "align": "center"
     },

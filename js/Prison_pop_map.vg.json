@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": "container",
     "height": 500,
-    "title": "Australian Prisoners by State",
+    "title": "",
     "projection": {"type": "mercator"},
     "data": {
       "url": "https://raw.githubusercontent.com/FouzUMS/FIT3179/refs/heads/main/Testing/STE_2021_AUST_GDA2020.json",

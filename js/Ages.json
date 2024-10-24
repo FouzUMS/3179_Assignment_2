@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "Pie Chart with percentage_tooltip",
+    "description": "",
     "height": 300,
     "width": "container",
     "data": {

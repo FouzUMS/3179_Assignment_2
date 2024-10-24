@@ -42,7 +42,7 @@
     <div class="pure-g">
         <div class="pure-u-1-1">
           <div class="description">
-            <h2>Age and Imprisonmwnt Trends</h2>
+            <h2>Age and Imprisonment Trends</h2>
             <p>Text 2. This is a bunch on placeholder text.</p></br>
           </div>
         </div>
@@ -78,12 +78,12 @@
       <div class="pure-g">
         <div class="pure-u-1-1">
           <div class="description">
-            <h2>Population of prisoners in different states</h2>
+            <h2>Breakdown of Crime between 2013 and 2023</h2>
             <p>Text 5. This is a bunch on placeholder text.</p></br>
           </div>
         </div>
         <div class="pure-u-4-5">
-          <div id="vis_" class="vis-container"></div>
+          <div id="vis5" class="vis-container"></div>
         </div>
       </div>
   </div>
@@ -96,6 +96,7 @@ This is the end of code -->
   var viz2 ="./js/Age_majorcrime.json";
   var viz3 ="./js/State_sentence.vg.json";
   var viz4 ="./js/Ages.json";
+  var viz5 ="./js/crime_severity_trend.vg.json";
   
   vegaEmbed('#vis1', viz1).then(function(result) {
   }).catch(console.error);
@@ -108,4 +109,17 @@ This is the end of code -->
   
   vegaEmbed('#vis4', viz4).then(function(result) {
   }).catch(console.error);
+
+  vegaEmbed('#vis5', viz5).then(function(result) {
+  }).catch(console.error);
   </script>
+
+<div class="pure-g">
+  <div class="pure-u-1-1 small-font">
+      <p>This visualisation is created by Fouz U. M. using online datasources:
+      <ul>
+          <li><a href="https://www.abs.gov.au/statistics/people/crime-and-justice/prisoners-australia/latest-release" target="https://www.abs.gov.au/statistics/people/crime-and-justice/prisoners-australia/latest-release">source 1</href>.
+      </ul>
+      </p>
+  </div>
+</div>

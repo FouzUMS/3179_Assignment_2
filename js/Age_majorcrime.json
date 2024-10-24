@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "Heatmap showing major crimes against age groups",
     "title": {
-      "text": "Relationship Between Age and Imprisonment in Australia",
+      "text": "",
       "fontSize": 17,
       "dy": -10
     },
