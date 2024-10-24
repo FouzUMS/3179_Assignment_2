@@ -3,11 +3,11 @@
     "description": "Heatmap showing major crimes against age groups",
     "title": {
       "text": "Relationship Between Age and Imprisonment in Australia",
-      "fontSize": 13,
+      "fontSize": 17,
       "dy": -10
     },
     "height": 400,
-    "width": 500,
+    "width": "container",
     "data": {"url": "https://raw.githubusercontent.com/FouzUMS/FIT3179/refs/heads/main/Assignment_2/data/age_majorcrime_unp.csv"},
     "mark": {"type": "rect", "tooltip": true},
     "selection": {
@@ -19,14 +19,16 @@
         "type": "ordinal",
         "title": "Type of Crime",
         "axis": {
-          "labelAngle": 0}
+          "labelAngle": 0},
+          "fontSize":15
       },
       "x": {
         "field": "Age_group", 
         "type": "ordinal", 
         "title": "Age Group",  
         "axis": {
-          "labelAngle": 15}
+          "labelAngle": 15,
+          "fontSize":15}
       },
       "color": {
         "field": "Acts",
@@ -55,5 +57,10 @@
           "title": "Occurances"
         }
       ]
-    }
+    },
+    "config": {
+        "style": {"cell": {"stroke": "transparent"}},
+        "font": "Verdana",
+        "title": {"fontSize": 17}
+      }
   }

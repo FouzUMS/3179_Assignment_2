@@ -24,6 +24,7 @@ body {
 .vis-container {
     width: 100%;
     align-items: center;
+    padding-left: 30px;
 }
 
 .description h2,
