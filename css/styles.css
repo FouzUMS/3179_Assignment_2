@@ -17,19 +17,25 @@ body {
     width: 900px;
     background-color: white;
     margin: auto;
-    padding: 50px;
+    padding: auto;
     padding-top: 35px;
 }
 
 .vis-container {
-    width: 100%;
-    align-items: center;
-    padding-left: 30px;
+    width: 800%;
+    /* align-items: center;
+    align-content: center; */
 }
 
 .description h2,
 h1 {
     margin-top: 0px;
+}
+
+.description {
+    width: 60%;
+    margin: 0;
+    text-align: left;
 }
 
 .description-right {
@@ -41,6 +47,7 @@ h1 {
 }
 
 .pure-g {
+    margin-top: 20px;
     margin-bottom: 40px;
 }
 

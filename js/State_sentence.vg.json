@@ -21,7 +21,7 @@
       "y": {
         "field": "Sentence_mean",
         "type": "quantitative",
-        "title": "Sentence (Average)"
+        "title": "Sentence (Years)"
       },
       "color": {
         "field": "Crime",
