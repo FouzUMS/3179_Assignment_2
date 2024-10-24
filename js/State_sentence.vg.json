@@ -1,0 +1,87 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.1.0.json",
+    "width": 500,
+    "height": 300,
+    "title": {
+      "text": "Average Sentence Per State",
+      "dx": -160,
+      "align": "left"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/FouzUMS/3179_Assignment_2/refs/heads/main/data/states_sentences.csv",
+      "format": {"type": "csv"}
+    },
+    "encoding": {
+      "x": {
+        "field": "State",
+        "title": null,
+        "type": "ordinal",
+        "axis": {"labelAngle": -30}
+      },
+      "y": {
+        "field": "Sentence_mean",
+        "type": "quantitative",
+        "title": "Sentence (Average)"
+      },
+      "color": {
+        "field": "Crime",
+        "legend": {"title": "Crime", "orient": "bottom", "columns": 3},
+        "scale": {
+          "range": [
+            "#E69F00",
+            "#56B4E9",
+            "#009E73",
+            "#F0E442",
+            "#0072B2",
+            "#D55E00",
+            "#CC79A7",
+            "#999999"
+          ]
+        }
+      },
+      "tooltip": [
+        {"field": "Sentence_mean", "type": "quantitative", "format": ",", "title": "Sentence mean (years)"},
+        {"field": "Crime", "type": "nominal"}
+      ]
+    },
+    "layer": [
+      {
+        "transform": [{"filter": {"param": "selectSeriousness"}}],
+        "mark": {"type": "line", "tooltip": true, "point": {"filled": true}}
+      },
+      {
+        "mark": {
+          "type": "text",
+          "dy": 80,
+          "dx": 0,
+          "fontSize": 12,
+          "fontWeight": "bold"
+        },
+          "params": [
+      {
+        "name": "selectSeriousness",
+        "select": {"type": "point", "fields": ["Seriousness"]},
+        "bind": {
+          "input": "select",
+          "options": [
+            "Very Serious", "Less Serious"
+          ],
+          "name": "Crime type: "
+        },
+        "value": "Less Serious"
+      }],
+        "transform": [
+          {"filter": "datum.Seriousness == selectSeriousness"}
+        ],
+        "encoding": {
+          "x": {"field": "State", "type": "ordinal"},
+          "y": {"field": "Sentence_mean", "type": "quantitative"}
+        }
+      }
+    ],
+    "config": {
+      "style": {"cell": {"stroke": "transparent"}},
+      "font": "Verdana",
+      "title": {"fontSize": 17}
+    }
+  }
