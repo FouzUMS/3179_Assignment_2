@@ -16,7 +16,7 @@
         "field": "State",
         "title": null,
         "type": "ordinal",
-        "axis": {"labelAngle": -30}
+        "axis": {"labelAngle": -20}
       },
       "y": {
         "field": "Sentence_mean",
@@ -83,6 +83,8 @@
     "config": {
       "style": {"cell": {"stroke": "transparent"}},
       "font": "Verdana",
-      "title": {"fontSize": 17}
+      "title": {"fontSize": 17},
+      "axis":{"titleFontSize": 14},
+      "legend": {"titleFontSize": 16}
     }
   }

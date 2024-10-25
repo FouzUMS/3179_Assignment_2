@@ -66,7 +66,9 @@
     "config": {
       "style": {"cell": {"stroke": "transparent"}},
       "font": "Verdana",
-      "title": {"fontSize": 17}
+      "title": {"fontSize": 17},
+      "axis":{"titleFontSize": 14},
+      "legend": {"titleFontSize": 16}
     }
   }
 

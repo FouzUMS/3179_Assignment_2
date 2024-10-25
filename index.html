@@ -21,105 +21,171 @@
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="./css/styles.css" media="all">
 
+  <h1>Prisoners in Australia</h1>
+  <div class="description">
+    <p><i>The focus of this analysis is on imprisonments in Australia. <a
+          href="https://www.abs.gov.au/statistics/people/crime-and-justice/prisoners-australia/latest-release">This
+          dataset</a> sheds light on how many individuals are imprisoned across different states, along with a detailed
+        breakdown of the types of crimes committed and some demographic information. It spans data from 2013 onward,
+        providing a historical perspective on incarceration trends.</i></p>
+    <div>
 
-</head>    
+</head>
+
 <body>
   <div class="page">
     <div class="pure-g">
-        <div class="pure-u-1-1">
-          <div class="description">
-            <h2>Australian Prisoners by State</h2></br>
-            <p>This map shows prisoner numbers across Australian states from 2013 to 2023, offering insights year by year. In 2023, Australia had a total of 41,929 prisoners. New South Wales consistently has the highest prisoner count, reflecting its large population. Interestingly, in recent years, Queensland has had more prisoners than Victoria, despite having a smaller overall population—a trend that raises questions about different state policies or crime patterns. Hover over each state to see the details.</p>
-          </div>
-        </div>
-        <div class="pure-u-4-5">
-          <div id="vis1" class="vis-container"></div>
+      <div class="pure-u-1-1">
+        <div class="description">
+          <h2>1. Australian Prisoners by State</h2>
+          <p>This map shows prisoner numbers across Australian states from 2013 to 2023, offering insights year by year.
+            In 2023, Australia had a total of 41,929 prisoners. New South Wales consistently has the highest prisoner
+            count, reflecting its large population. Interestingly, in recent years, Queensland has had more prisoners
+            than Victoria, despite having a smaller overall population—a trend that raises questions about different
+            state policies or crime patterns. Hover over each state to see the details.</p>
         </div>
       </div>
-<!-- population of prisoners in various states -->
+      <div class="pure-u-4-5">
+        <div id="vis1" class="vis-container"></div>
+      </div>
+    </div>
+    <!-- population of prisoners in various states -->
 
 
     <div class="pure-g">
-        <div class="pure-u-1-1">
-          <div class="description">
-            <h2>Age and Imprisonment Trends</h2>
-            <p>Text 2. This is a bunch on placeholder text.</p></br>
-          </div>
-        </div>
-        <div class="pure-u-4-5">
-          <div id="vis2" class="vis-container"></div>
+      <div class="pure-u-1-1">
+        <div class="description">
+          <h2></br></br>2. Age and Imprisonment Trends</h2>
+          <p>This heatmap visualizes the relationship between different age groups and crime types, providing a clear
+            understanding of which demographics are most commonly associated with specific offenses. The darkest shades
+            indicate the highest frequency of occurrences, revealing that acts intended to cause injury are the most
+            prevalent crime. Notably, individuals aged 25 to 44 constitute the majority of offenders. Interestingly,
+            homicide and sexual assault exhibit a relatively even distribution across age groups, suggesting that these
+            crimes affect a wide range of ages without a strong age bias.
+          </p></br>
         </div>
       </div>
+      <div class="pure-u-4-5">
+        <div id="vis2" class="vis-container"></div>
+      </div>
+    </div>
 
-      <div class="pure-g">
-        <div class="pure-u-1-1">
-          <div class="description">
-            <h2>Average sentence duration across states</h2>
-            <p>Text 3. This is a bunch of placeholder text.</p>
-          </div>
-        </div>
-        <div class="pure-u-4-5">
-          <div id="vis3" class="vis-container"></div>
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div class="description">
+          <h2></br></br>3. Average sentence duration across states</h2>
+          <p>This line graph presents the average sentence lengths for 16 crime types across various Australian states,
+            including a national average. The y-axis indicates the number of years sentenced. Serious crimes, such as
+            homicide and assault, fall into the top tier of severity, where sentencing durations remain fairly
+            consistent across states. However, there is significant variability in the sentencing for homicide, ranging
+            from 9.2 years in South Australia to 22.4 years in Tasmania. Also, incarceration for abduction/harassment
+            fluctuates from 0 to 9.6 years. In contrast, less serious crimes tend to have more uniform sentences, with
+            illicit drug use consistently attracting longer sentences across all states, averaging between 3.8 to 8.4
+            years.
+          </p></br>
         </div>
       </div>
+      <div class="pure-u-4-5">
+        <div id="vis3" class="vis-container"></div>
+      </div>
+    </div>
 
-      <div class="pure-g">
-        <div class="pure-u-1-1">
-          <div class="description">
-            <h2>Age Groups</h2>
-            <p>Text 4. This is a bunch on placeholder text.</p></br>
-          </div>
-        </div>
-        <div class="pure-u-4-5">
-          <div id="vis4" class="vis-container"></div>
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div class="description">
+          <h2></br></br>4. Age Groups (2023)</h2>
+          <p>These visualizations complement each other by illustrating the age distribution of inmates in 2023. The bar
+            graph highlights that the 30-34 age group has the highest inmate count at 7,730, followed closely by the
+            35-39 age group with 6,882 inmates and the 25-29 age group at 6,614. Together, these three age brackets
+            account for a significant portion of the prison population. The pie chart reinforces this insight by
+            displaying the proportional representation of these age groups. Individuals between the age of 25 and 39
+            make up 50% of all inmates (see pie chart).
+          </p></br>
         </div>
       </div>
+      <div class="pure-u-1-2">
+        <div id="vis6" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="vis4" class="vis-container"></div>
+      </div>
+    </div>
 
-      <div class="pure-g">
-        <div class="pure-u-1-1">
-          <div class="description">
-            <h2>Breakdown of Crime between 2013 and 2023</h2>
-            <p>Text 5. This is a bunch on placeholder text.</p></br>
-          </div>
-        </div>
-        <div class="pure-u-4-5">
-          <div id="vis5" class="vis-container"></div>
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div class="description">
+          <h2></br></br>5. Breakdown of Crime between 2013 and 2023</h2>
+          <p>This representation tracks the shifts in crime proportions from 2013 to 2023, revealing notable trends over
+            the decade. A significant increase in acts intended to cause injury, which rose by nearly 6%, is
+            particularly concerning. Additionally, the proportion of sexual assault and related offenses increased from
+            11.4% to 16.3%. In contrast, there have been decreases of approximately 3% each in the categories of
+            unlawful entry with intent and robbery/extortion, indicating evolving crime patterns that may reflect
+            broader societal changes.
+          </p></br>
         </div>
       </div>
+      <div class="pure-u-4-5">
+        <div id="vis5" class="vis-container"></div>
+      </div>
+    </div>
   </div>
-<!-- 
-This is the end of code -->
+  <!-- 
+This is the end of viz -->
 
+  <h3>Remarks on data biases</h3>
+  <div class="description">
+    <h3><img src="./image/prison.jpg" alt="Jailcell window" width="600" height="400"></h3>
+    <p>It's important to recognize that the data used in this analysis may have inherent biases. Different states in
+      Australia may categorize crimes and convictions differently, which can lead to inconsistencies in how we interpret
+      the data. For example, in visualization 3, where we see varying average sentences for crimes across states, this
+      variation could stem from these differences in classification rather than actual discrepancies in crime severity.
+      Essentially, the same type of crime might be classified under different categories or treated differently based on
+      local laws, which can skew the overall picture.</br></br>
+      Another example is the stacked area chart (final visualization) showing that incarceration rates have
+      remained relatively stable over the years. This stability could suggest that law enforcement agencies are
+      maintaining certain quotas for convictions and prosecutions. However, it’s essential to understand that these
+      incarceration rates do not necessarily reflect changes in crime rates. Just because the number of people
+      incarcerated remains constant, it doesn't mean that crime is happening at the same rate; rather, it might indicate
+      that the justice system is processing cases in a consistent manner, potentially influenced by policies or resource
+      allocations.</p>
+  </div>
+</body>
 
 <script>
-  var viz1 ="./js/Prison_pop_map.vg.json";
-  var viz2 ="./js/Age_majorcrime.json";
-  var viz3 ="./js/State_sentence.vg.json";
-  var viz4 ="./js/Ages.json";
-  var viz5 ="./js/crime_severity_trend.vg.json";
-  
-  vegaEmbed('#vis1', viz1).then(function(result) {
-  }).catch(console.error);
-  
-  vegaEmbed('#vis2', viz2).then(function(result) {
-  }).catch(console.error);
-  
-  vegaEmbed('#vis3', viz3).then(function(result) {
-  }).catch(console.error);
-  
-  vegaEmbed('#vis4', viz4).then(function(result) {
+  var viz1 = "./js/Prison_pop_map.vg.json";
+  var viz2 = "./js/Age_majorcrime.vg.json";
+  var viz3 = "./js/State_sentence.vg.json";
+  var viz4 = "./js/Ages_pie.vg.json";
+  var viz6 = "./js/Ages_bar.vg.json";
+  var viz5 = "./js/crime_severity_trend.vg.json";
+
+  vegaEmbed('#vis1', viz1).then(function (result) {
   }).catch(console.error);
 
-  vegaEmbed('#vis5', viz5).then(function(result) {
+  vegaEmbed('#vis2', viz2).then(function (result) {
   }).catch(console.error);
-  </script>
+
+  vegaEmbed('#vis3', viz3).then(function (result) {
+  }).catch(console.error);
+
+  vegaEmbed('#vis4', viz4).then(function (result) {
+  }).catch(console.error);
+
+  vegaEmbed('#vis5', viz5).then(function (result) {
+  }).catch(console.error);
+
+  vegaEmbed('#vis6', viz6).then(function (result) {
+  }).catch(console.error);
+</script>
 
 <div class="pure-g">
   <div class="pure-u-1-1 small-font">
-      <p>This visualisation is created by Fouz U. M. using online datasources:
-      <ul>
-          <li><a href="https://www.abs.gov.au/statistics/people/crime-and-justice/prisoners-australia/latest-release" target="https://www.abs.gov.au/statistics/people/crime-and-justice/prisoners-australia/latest-release">source 1</href>.
-      </ul>
-      </p>
+    <p>This visualisation is created by Fouz U. M. using online datasources:
+    <ul>
+      <li><a href="https://www.abs.gov.au/statistics/people/crime-and-justice/prisoners-australia/latest-release"
+          target="https://www.abs.gov.au/statistics/people/crime-and-justice/prisoners-australia/latest-release">source
+          1</href>
+    </ul>
+    </p>
   </div>
 </div>

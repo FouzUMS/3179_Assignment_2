@@ -3,7 +3,6 @@
     "description": "Heatmap showing major crimes against age groups",
     "title": {
       "text": "",
-      "fontSize": 17,
       "dy": -10
     },
     "height": 400,
@@ -27,13 +26,13 @@
         "type": "ordinal", 
         "title": "Age Group",  
         "axis": {
-          "labelAngle": 15,
+          "labelAngle": -20,
           "fontSize":15}
       },
       "color": {
         "field": "Acts",
         "type": "quantitative",
-        "title": "Crime Occurance (no.)",
+        "title": "Crimes (no.)",
         "scale": {"scheme": "oranges"},
         "condition": {"selection": "highlight", "value": "green"}
       },
@@ -61,6 +60,8 @@
     "config": {
         "style": {"cell": {"stroke": "transparent"}},
         "font": "Verdana",
-        "title": {"fontSize": 17}
+        "title": {"fontSize": 17},
+        "axis":{"titleFontSize": 14},
+        "legend": {"titleFontSize": 16}
       }
   }

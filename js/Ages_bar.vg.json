@@ -1,0 +1,52 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 350,
+    "height": 290,
+    "title": "",
+    "data": {
+      "values": [
+        {"Age": "18 years", "Crimes": 227},
+        {"Age": "19 years", "Crimes": 470},
+        {"Age": "20–24 years", "Crimes": 4221},
+        {"Age": "25–29 years", "Crimes": 6614},
+        {"Age": "30–34 years", "Crimes": 7730},
+        {"Age": "35–39 years", "Crimes": 6882},
+        {"Age": "40–44 years", "Crimes": 5502},
+        {"Age": "45–49 years", "Crimes": 3727},
+        {"Age": "50–54 years", "Crimes": 2673},
+        {"Age": "55–59 years", "Crimes": 1528},
+        {"Age": "60–64 years", "Crimes": 907},
+        {"Age": "65 years and over", "Crimes": 1437}
+      ]
+    },
+    "mark": {
+      "type": "bar",
+      "color": "#800020"
+    },
+    "encoding": {
+      "x": {
+        "field": "Age",
+        "type": "ordinal",
+        "title": "Age Group",
+        "axis": {
+          "labelAngle": -20}
+      },
+      "y": {
+        "field": "Crimes",
+        "type": "quantitative",
+        "title": "Number of Crimes"
+      },
+      "tooltip": [
+        {"field": "Age", "type": "ordinal", "title": "Age Group"},
+        {"field": "Crimes", "type": "quantitative", "title": "Crimes"}
+      ]
+    },
+    "config": {
+      "style": {"cell": {"stroke": "transparent"}},
+      "font": "Verdana",
+      "title": {"fontSize": 17},
+      "axis":{"titleFontSize": 14},
+      "legend": {"titleFontSize": 16}
+    }
+  }
+  
