@@ -7,7 +7,7 @@
     },
     "height": 400,
     "width": "container",
-    "data": {"url": "https://raw.githubusercontent.com/FouzUMS/FIT3179/refs/heads/main/Assignment_2/data/age_majorcrime_unp.csv"},
+    "data": {"url": "https://raw.githubusercontent.com/FouzUMS/3179_Assignment_2/refs/heads/main/data/age_majorcrime_unp.csv"},
     "mark": {"type": "rect", "tooltip": true},
     "selection": {
       "highlight": {"type": "single", "empty": "none", "on": "mouseover"}
