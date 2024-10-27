@@ -5,7 +5,7 @@
     "title": "",
     "projection": {"type": "mercator"},
     "data": {
-      "url": "https://raw.githubusercontent.com/FouzUMS/FIT3179/refs/heads/main/Testing/STE_2021_AUST_GDA2020.json",
+      "url": "https://raw.githubusercontent.com/FouzUMS/3179_Assignment_2/refs/heads/main/js/STE_2021_AUST_GDA2020.json",
       "format": {"type": "topojson", "feature": "STE_2021_AUST_GDA2020"}
     },
     "params": [
@@ -37,7 +37,7 @@
         "lookup": "properties.STE_NAME21",
         "from": {
           "data": {
-            "url": "https://raw.githubusercontent.com/FouzUMS/FIT3179/refs/heads/main/Testing/states_and_years.csv"
+            "url": "https://raw.githubusercontent.com/FouzUMS/3179_Assignment_2/refs/heads/main/data/states_and_years.csv"
           },
           "key": "State",
           "fields": ["2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","Population"]
